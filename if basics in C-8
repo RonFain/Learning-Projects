@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+
+int a = 0;
+printf("Math Test:\n");
+printf("How much 7*5?\n");
+scanf("%d",&a);
+
+if(a == 35){
+    printf("Pass!");
+}
+else{
+    printf("Failed!");
+}
+
+    return 0; 
+}
+
