@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Insert lenght of a square");
+    int lenght = sc.nextInt();
+    System.out.println("Square length:");
+    int area = lenght*lenght;
+    System.out.println("The area is: " + area);
+
+	}
+}
+
