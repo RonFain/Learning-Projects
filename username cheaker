@@ -1,0 +1,19 @@
+#include <string.h>
+#include <stdio.h>
+
+int CheckName(char Name[64]){
+    if(Name[0] > 64 && Name[0] < 91 ){
+        printf("Valid");
+    }
+    else{
+       printf("Invalid");
+    }
+ }
+
+int main()
+{
+    char UserName[64];
+    scanf("%s", UserName);
+    CheckName(UserName);
+    return 0;
+}
