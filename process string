@@ -1,0 +1,12 @@
+def process_string(input_string):
+    if len(input_string) > 10:
+        odd_string = input_string[1::2]
+        return odd_string
+    else:
+        last2chars = input_string[-2:]
+        return last2chars
+      
+#part 2  
+string = str(input("Insert a string: "))
+print(process_string(string))
+
