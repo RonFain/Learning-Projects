@@ -1,0 +1,27 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int number;
+    int number1;
+    number=0;
+    printf("write numbers only\n");
+    while(number==0){
+        scanf("%d",&number1);
+        if(number1>=0){
+            printf("good\n");
+           //number=1; 
+           break;
+        }
+        else if(number1<0){
+            printf("write number  bigger  than 0\n");
+        }
+       // else{
+           // printf("pls enter a number bigger than zero");
+            
+       // }
+    }
+    return 0;
+}
+
