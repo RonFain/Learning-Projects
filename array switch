@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+            char[] mynum = {'a','b','c'};
+            for(int i=0; i<mynum.length; i++){
+                System.out.print(mynum[i] + " ");
+            }
+            for(int i=0; i<mynum.length; i++){
+                if(mynum[i] == 'a'){
+                    System.out.println("there is A letter");
+                }
+            }
+        }
+	}
