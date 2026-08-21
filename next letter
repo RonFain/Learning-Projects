@@ -1,0 +1,18 @@
+def next_letter(word):
+    result_word = ""
+    for i in word:
+        if i.isalpha():
+            if i == 'z':
+                next_char = 'a'
+            elif i == 'Z':
+                next_char = 'A'
+            else:
+                next_char = chr(ord(i) + 1)
+        else:
+            print("Wrong")
+            return
+        result_word += next_char
+    return result_word
+
+input_word = "Car1"
+next_letter(input_word)
