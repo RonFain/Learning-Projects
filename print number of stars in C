@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int numberofstars;
+    int i=0;
+    scanf("%d",&numberofstars);
+    while(i< numberofstars){
+        printf("*");
+        i++;
+    }
+
+    return 0;
+}
+
