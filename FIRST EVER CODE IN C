@@ -1,0 +1,16 @@
+#include <stdio.h>
+void foo( )
+{
+   printf("Print Foo");  
+   
+}
+void main () {
+   char str1[20];
+   char str2[20] = "MAX";
+   printf("Enter Name: ");
+   scanf( "%20s", str1 );
+   printf("hello %s!\n  ", str1  );
+   printf("hello %s!\n  ", str2  );
+    foo( );
+    //return(2);
+}
