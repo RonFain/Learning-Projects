@@ -1,0 +1,15 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int burte=1;
+    int password=1;
+    scanf("%d",&password);
+    while(burte!=password ){
+        burte++;
+        printf("%d\n",burte);
+    }
+    printf("the password is: %d",burte);
+    return 0;
+}
