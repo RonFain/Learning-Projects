@@ -1,0 +1,50 @@
+
+#include <stdio.h>
+
+int main()
+{
+    
+    char floor1;
+    int tur;
+    printf("Insert floor \n");
+    scanf("%c",&floor1);
+    printf("Insert tur\n");
+    scanf("%d",&tur);
+    if(tur==1 || tur==2){
+        switch(floor1){
+            case 'a' :
+            printf("welcome to %c%d",floor1,tur);
+            break;
+            case 'A':
+            printf("welcome to %c%d",floor1,tur);
+            break;
+            case 'b':
+            printf("welcome to %c%d",floor1,tur);
+            break;
+            case 'B':
+            printf("welcome to %c%d",floor1,tur);
+            break;
+            case 'c':
+            printf("welcome to %c%d",floor1,tur);
+            break;
+            case 'C':
+            printf("welcome to %c%d",floor1,tur);
+            break;
+            case 'd':
+            printf("welcome to %c%d",floor1,tur);
+            break;
+            case 'D':
+            printf("welcome to %c%d",floor1,tur);
+            break;
+            default:
+            printf("sorry wrong building");
+        }
+        }
+        else{
+            printf("sorry wrong building");
+        }
+
+
+
+    return 0;
+}
