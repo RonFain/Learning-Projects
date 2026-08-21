@@ -1,0 +1,33 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Input your grade 1:");
+		int grade1 = sc.nextInt();
+		System.out.println("Input your grade 2:");
+		int grade2 = sc.nextInt();
+		System.out.println("Input your grade 3:");
+		int grade3 = sc.nextInt();
+		double avg = (grade1 + grade2 + grade3)/3;
+		System.out.println(avg);
+		if(avg != 100){
+		    System.out.println("Must learn more ");
+		}
+		if(avg>=90){
+		    System.out.println("best");
+		}
+		if(avg<90 && avg >= 80){
+		    System.out.println("Ok");
+		}
+		if(avg == 80){
+		    System.out.println("Fine");
+		}
+		if(avg > 56 && avg <80){
+		    System.out.println("Bad");
+		}
+		if(avg < 56){
+		    System.out.println("Fail");
+		}
+	}
+}
