@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int[]meplaga = new int[5];
+		int max=Integer.MIN_VALUE;
+		int maxmeplaga=0;
+		for(int i =0;i<meplaga.length;i++){
+		    System.out.print("how much votes for meplaga: "); 
+		    System.out.println(i+1);
+		    meplaga[i] = sc.nextInt();
+		    if(meplaga[i]>max){
+		        max = meplaga[i];
+		    }
+		}
+		for(int i =0;i<meplaga.length;i++){
+		    if(meplaga[i]==max){
+		        maxmeplaga = i+1;
+		    }
+		}
+		System.out.print("The maplaga with most votes is: ");
+		System.out.println(maxmeplaga);
+		System.out.print("There are: ");
+		System.out.print(max);
+	    System.out.println(" Votes");
+	}
+}
