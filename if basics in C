@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int number;
+    printf("write number above 10\n");
+    scanf("%d",&number);
+    if(number > 10){
+        printf("bigger than 10");
+    }
+    else if(number < 10 && number >= 5){
+        printf("small than 10 but bigger than 5");
+    }
+    else if(number < 5 ){
+        printf("small than 5");
+    }
+    else if(number == 10){
+        printf("its 10");
+    }
+    return 0;
+}
+
