@@ -1,0 +1,23 @@
+
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int e = 10;
+    int d = 5;
+    
+    int sum = e+d;
+    int diff = e-d;
+    int multres = e*d;
+    int divideRes = e/d;
+    int mudlo = e%d;
+    printf("sum is :%d\n diffrent is: %d\n",sum,diff);
+    printf("mult is: %d\n divide is: %d\n",multres,divideRes);
+    printf("mudlo is: %d\n",mudlo);
+    
+
+    
+    return 0
+}
