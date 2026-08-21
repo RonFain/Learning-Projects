@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner ob1 = new Scanner(System.in);
+	    Scanner ob2 = new Scanner(System.in);
+	    int num1=ob1.nextInt();
+	    int num2=ob2.nextInt();
+	    for(int i=1;i<=10;i++)
+	    {
+	        System.out.println(peula((int)(Math.random() * (num2-num1)) + num1));
+	    }
+	}
+	public static boolean peula(int num)
+    {
+        int dig = num % 10;
+        while(num>0)
+        {
+            if(num % 10 != dig)
+            {
+              return false;
+            }
+            num=num/10;
+        }
+        return true;
+    }
+    
+}
