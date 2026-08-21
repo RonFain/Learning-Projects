@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+
+int main()
+{
+   int number;
+   printf("write number that odd or above 20\n");
+   scanf("%d", &number);
+    if(number >= 20 || number%2 == 1){
+        printf("true");
+    }
+    else{
+        printf("false");
+    }
+    return 0;
+}
+
