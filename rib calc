@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Input your first rib size: ");
+		int rib1 = sc.nextInt();
+		System.out.println("Input your second rib size: ");
+		int rib2 = sc.nextInt();
+		System.out.println("Input your third rib size:");
+		int rib3 = sc.nextInt();
+		if (rib1 + rib2 > rib3 || rib2 + rib3 > rib1 || rib3 + rib1 > rib2){
+		    System.out.println("Yes");
+		}
+		else{
+		    System.out.println("No");
+		}
+        
+	}
+}
