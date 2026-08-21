@@ -1,0 +1,13 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Insert number of days");
+		int numdays = sc.nextInt();
+		int weeks = numdays/7;
+		int days = numdays%7;
+		System.out.println("There is "+ weeks + " weeks");
+		System.out.println("There is "+ days + " days");
+	}
+}
