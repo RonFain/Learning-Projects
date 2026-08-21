@@ -1,0 +1,38 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+    int i=0;
+    int number=0;
+    int random=rand();
+    random=random%100;
+
+    printf("write number between 1 and 100\n");
+    while(i<10){
+        scanf("%d",&number);
+        if(number == random){
+            printf("good odds\n");
+            break;
+        }
+    
+     if(number>100 || number<0){
+            printf("write number between 1 and 100!!\n");
+        }
+        if(number<random){
+            printf("number is lower than the real number\n");
+        }
+        else if(number>random){
+            printf("number is above the real number\n");
+        }
+        i++;
+}
+if(number != random && i==10){
+            printf("wrong odds");
+        }
+    return 0;
+}
+
+
