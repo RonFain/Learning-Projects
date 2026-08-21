@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Random rand = new Random();
+		int cube = rand.nextInt(6)+ 1;
+        int won=0;
+		for(int i=0; i<3;i++){
+		    int guess = sc.nextInt();
+		    if(guess == cube){
+		        System.out.println("you won");
+		        won = 0;
+		        break;
+		    }
+		    won=1;
+		}
+		if(won == 1){
+		    System.out.println("you lose");
+		}
+	}
+}
