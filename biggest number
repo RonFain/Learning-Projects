@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+#include <limits.h>
+int main()
+{
+    int num=0;
+    int Biggest = INT_MIN;
+    while(num != -1){
+        scanf("%d", &num);
+        if(num > Biggest){
+           Biggest = num; 
+        }
+    }
+    printf("The Biggest Number Is: %d",Biggest);
+    return 0;
+}
+
