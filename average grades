@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int counter=0;
+		int totalgrades=0;
+		int grades2=0;
+		while(grades2 != -1){
+		     grades2 = sc.nextInt();
+		     if(grades2 != -1){
+		         totalgrades = totalgrades + grades2;
+		         counter++;
+		     }
+		}
+		System.out.println(totalgrades/counter);
+	}
+}
