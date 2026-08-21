@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int rows;
+    int Columns;
+    printf("Insert Number of Rows\n");
+    scanf("%d",&rows);
+    printf("Insert Number of Columns\n");
+    scanf("%d",&Columns);
+    for (int x = 1; x <= rows; x++) {
+        for (int y = 1; y <= Columns; y++){
+        printf("%d\t", x*y );
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
