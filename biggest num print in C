@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int number=0;
+    int i=0;
+    
+    while(i != -1){
+        scanf("%d", &i);
+        if(number < i){
+            number = i;
+        }
+    }
+    printf("%d", number);
+    return 0;
+}
