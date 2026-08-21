@@ -1,0 +1,6 @@
+def wordspacer(input_string):
+    for i in input_string:
+        print(i)
+string = input("Insert a word: ")
+#part 2
+wordspacer(string)
