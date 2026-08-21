@@ -1,0 +1,58 @@
+public class Employee{
+    private String name;
+    private int id;
+    private int totalhours;
+    private double sallary;
+    
+    Employee(){
+        this.name = name;
+        this.id = id;
+        this.totalhours = totalhours;
+        this.sallary = sallary;
+    }
+    
+    public double Howmuchmoney(){
+        int hours = this.totalhours;
+        double sallary = this.sallary;
+        return sallary*hours;
+    }
+    
+    
+    public String Getname(){
+        return this.name;
+    }
+    public int Getid(){
+        return this.id;
+    }
+    public int Gettotalhours(){
+        return this.totalhours;
+    }
+    public double Getsallary(){
+        return this.sallary;
+    }
+    
+    public void Setname(String name){
+        this.name = name;
+    }
+    public void Setid(int id){
+        this.id = id;
+    }
+    public void SetTotalhours(int totalhours){
+        this.totalhours = totalhours;
+    }
+    public void Setsallary(double sallary){
+        this.sallary = sallary;
+    }
+}
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Employee person = new Employee();
+		person.Setsallary(100);
+		person.SetTotalhours(100);
+		System.out.println(person.Howmuchmoney());
+	}
+}
