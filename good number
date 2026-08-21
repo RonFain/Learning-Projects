@@ -1,0 +1,25 @@
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int input=0;
+    int sum=0;
+    int sharit=0;
+    
+    printf("Insert number\n");
+    scanf("%d",&input);
+    while(input != 0){
+        sharit = input%10;
+        sum = sum+sharit;
+        input = input/10;
+    }
+    if(sum >= 20){
+        printf("Good number. the sum is %d\n",sum);
+    }
+    else{
+        printf("Not a good number\n");
+    }
+    return 0;
+}
