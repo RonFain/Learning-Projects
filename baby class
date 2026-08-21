@@ -1,0 +1,67 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+    	Baby b1 = new Baby("1111",'M',65,3.2);
+    	Baby b2 = new Baby("2222",'F',70,2.6);
+    	Baby b3 = new Baby("3333",60,3.5);
+    	b1.updateWeight(0.3);
+    	b1.addHeight(5);
+    	b2.updateWeight(0.2);
+    	b3.addHeight(10);
+    	if(b1.isSame(b3)){
+    	    System.out.println("***");
+    	}
+    	if(b2.isSame(b3)){
+    	    System.out.println("!!!");
+    	}
+    	else{
+    	    System.out.println("*!!*");
+    	}
+    	
+    	
+	}
+}
+class Baby{
+    private String id;
+    private char gender;
+    private int height;
+    private double weight;
+    public Baby(String id, int height, double weight){
+        this.id = id;
+        this.height = height;
+        this.weight = weight;
+    }
+    public Baby(String id, char gender, int height, double weight){
+        this.id = id;
+        this.gender = gender;
+        this.height = height;
+        this.weight = weight;
+    }
+    
+    // Get 
+    public int getHeight(){
+        return height;
+    }
+    public double getWeight(){
+        return weight;
+    }
+    
+    // Set
+    public void updateWeight(double w){
+        this.weight += w;
+    }
+    public void addHeight(int h){
+        this.height += h;
+    }
+    
+    //functions
+    public boolean isSame(Baby other){
+        if(this.height == other.height && this.weight == other.weight){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+}
