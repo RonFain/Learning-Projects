@@ -1,0 +1,43 @@
+import java.util.*;
+class Dog {
+    private int weight;
+    private int height;
+    private String type;
+    private boolean owner;
+    private String color;
+    
+    public Dog(int weight,int height,String type,boolean owner,String color){
+        this.weight =weight;
+        this.height =height;
+        this.type =type;
+        this.owner =owner;
+        this.color =color;
+    }
+    public String toString() {
+        return "Dog {"+
+        "\n    color: "+this.color+
+        "\n    weight: "+this.weight+
+        "\n    height: "+this.height+
+        "\n    type: "+this.type+
+        "\n    hasOwner: "+this.owner+
+        "\n}";
+    }
+}
+class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Whats dog weight?");
+		int weight = sc.nextInt();
+		System.out.println("Whats dog height?");
+		int height = sc.nextInt();
+		System.out.println("Whats dog type?");
+		String type = sc.next();
+		System.out.println("Does he have a owner?");
+		boolean owner = sc.nextBoolean();
+		System.out.println("Whats his color?");
+		String color = sc.next();
+		Dog dog = new Dog(weight,height,type,owner,color);
+		System.out.println(dog.toString());
+	}
+}
