@@ -1,0 +1,24 @@
+#include <limits.h>
+#include <stdio.h>
+
+int main()
+{
+    int MyArray[10];
+    int sum=0;
+    int mult=1;
+    int smallest = INT_MAX;
+    for (int i = 0; i < 10; i++) {
+        scanf("%d",&MyArray[i]);
+        sum += MyArray[i];
+        mult = mult*MyArray[i];
+        if(MyArray[i] < smallest){
+            smallest = MyArray[i];
+        }
+    }
+    printf("The sum of all numbers is: %d\n",sum);
+    printf("The mult of all number is : %d\n",mult);
+    printf("The smallest number is: %d\n", smallest);
+    return 0;
+}
+
+
